@@ -6,7 +6,7 @@
 using namespace std;
 
 // Hanoi 
-void hanoi(int n, char origin, char aux, char destiny, int &contador){
+void hanoi(int n, char origin, char aux, char destiny, int &counter){
     if(n==1){
         cout<<"Mover disco 1 de "<<origin<<" a "<<destiny<<endl;
         contador++;
@@ -14,14 +14,14 @@ void hanoi(int n, char origin, char aux, char destiny, int &contador){
     }// Caso base
 
     //Pao 1: Mover (n-1) del origen al auxiliar
-    hanoi(n-1, origin, destiny, aux, contador);
+    hanoi(n-1, origin, destiny, aux, counter);
 
     //Pao 2: Mover el n-ésimo disco del origen al destino
     cout<<"Mover disco "<<n<<" de "<<origin<<" a "<<destiny<<endl;
     contador++;
 
     //Paso 3: Mover los (n-1) del auxiliar al origen
-    hanoi(n-1, aux, origin, destiny, contador);
+    hanoi(n-1, aux, origin, destiny, counter);
 }
 
 int main(){

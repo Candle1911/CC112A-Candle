@@ -1,32 +1,17 @@
-# Ignorar ejecutables
+# Ejecutables y objetos
 *.exe
 *.out
 *.o
 *.obj
 
-# Ignorar carpetas de compilación
+# Carpetas de compilación
 Debug/
 Release/
 x64/
 bin/
 build/
 
-# Ignorar archivos de Visual Studio / VS Code
-.vscode/
-# Ignorar ejecutables
-*.exe
-*.out
-*.o
-*.obj
-
-# Ignorar carpetas de compilación
-Debug/
-Release/
-x64/
-bin/
-build/
-
-# Ignorar archivos de Visual Studio / VS Code
+# Configuración de editores
 .vscode/
 *.vcxproj.user
 *.suo
@@ -36,7 +21,7 @@ build/
 *.ipch
 *.opensdf
 
-# Ignorar archivos temporales
+# Archivos temporales
 *.log
 *.tmp
 *.bak

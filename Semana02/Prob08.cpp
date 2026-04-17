@@ -1,6 +1,6 @@
 #include<iostream>
 #include<cstdlib>// srand(), rand()
-#include<ctime>
+#include<ctime>// time()
 using namespace std;
 
 void BubbleSort(int arr[], int n){
@@ -133,7 +133,8 @@ int main(){
         if(option==1 || option==2 || option==3){
             cout<<"\nDesea buscar un elemento del arreglo? (S/N):\n";
             cin>>c;
-            if(c=='s'){
+            
+            if(tolower(c)=='s'){
                 cout<<"Digite el elemento:\n";
                 cin>>element;
                 cout<<"\nBuscando...\n";
@@ -142,7 +143,7 @@ int main(){
                 }else{
                     cout<<element<<" no pertenece al arreglo"<<endl;
                 }
-            }else if(c=='n'){
+            }else if(tolower(c)=='n'){
                 cout<<"\nSaliendo...";
                 break;
             }

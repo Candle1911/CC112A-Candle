@@ -1,5 +1,5 @@
 /*Selection Sort: En cada pasada i, busca el mínimo en el
-subarreglo [ i . . .N−1 ] y lo intercambia
+subarreglo [ i+1, . . ., N−1 ] y lo intercambia
 con el elemento en la posición i.*/
 #include<iostream>
 using namespace std;
